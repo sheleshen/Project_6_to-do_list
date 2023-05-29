@@ -26,7 +26,7 @@
 <body>
 
     <section class="screen">
-        <!-- <div class="posittion-bg-image posittion-top-left">
+        <div class="posittion-bg-image posittion-top-left">
             <img src="/image/Vector 1.svg" alt="Фоновое изображение">  
         </div>
         <div class="posittion-bg-image posittion-bottom-right">
@@ -34,25 +34,23 @@
         </div>
         <div class="posittion-bg-image posittion-bottom-left">
               <img src="/image/Group 2.svg" alt="Фоновое изображение">  
-        </div> -->
-
-
-        <div class="application-screen">
-            <h1 class="application-title">Пример текста</h1>
-            <div class="add-case">
-                <input class="application-input" type="text">
-                <button class="btn">
-                    Добавить
-                </button>
-            </div> 
-            <p>
-                1. Пример текста
-            </p>
         </div>
 
 
-        
+        <div class="application-screen">
+            <h1 id="title" class="application-title"></h1>
+            <p id="error" class="acccent-text"></p>
+            <div class="add-case">
+                <input id="input" class="application-input" type="text">
+                <button onclick="addCase()" class="btn">
+                    Добавить
+                </button>
+            </div>
+            <ol id="caseList"></ol>
+        </div>
     </section>
+
+    <script src="/script.js"></script>
 
 </body>
 </html>

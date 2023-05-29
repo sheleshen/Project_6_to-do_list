@@ -7,6 +7,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html, body {
+    height: 100%;
+  }
+
 :root {
     /* MAIN */
     --main-pink: #EB9898;
@@ -14,7 +18,7 @@
     --main-blue: #CFDDE6;
 
     /* BG */
-    --bg-opacity: rgba(250, 250, 250, 0.5);
+    --bg-opacity: rgba(226, 227, 233, 0.5);;
 
     /* BUTTON */
     --btn-bg: #EB9898;
@@ -34,16 +38,21 @@
 
 /* ТЕКСТ И ССЫЛКИ */
 
-a, p, ul, li, h1, h2, h3, h4, h5, h6 {
+a, p, ol, li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p {
+p, ol {
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 120%;
     color: var(--text);
+    padding-bottom: 15px;
+}
+
+ol {
+    list-style-position: inside;
 }
 
 /*  BTN КНОПКИ */
@@ -55,7 +64,7 @@ p {
     border-radius: 10px;
     color: var(--btn-txt);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 120%;
     text-align: center;
     padding: 15px 32px;
@@ -66,13 +75,13 @@ p {
 .btn:hover {
     background-color: var(--btn-bg-h);
     color: var(--btn-txt);
-    transition: all 300ms linear;
+    transition: all 250ms linear;
 }
 
 .btn:active {
     background-color: var(--btn-bg-cl);
     color: var(--btn-txt);
-    transition: all 300ms linear;
+    transition: all 250ms linear;
 }
 
 /* ЗАГОЛОВКИ */
@@ -80,7 +89,7 @@ p {
 h1 {
     font-style: normal;
     font-weight: 400;
-    font-size: 70px;
+    font-size: 60px;
     line-height: 120%;
     color: var(--text-black);
     text-transform: none;
@@ -90,29 +99,29 @@ h1 {
 /*  */
 
 .screen {
-    background-color: #8c888d;
-    min-height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     padding: 50px;
 }
 
-/* .posittion-bg-image {
+.posittion-bg-image {
     position: absolute;
-} */
+}
 
 .posittion-top-left{
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
 }
 
 .posittion-bottom-right {
-    position: absolute;
-    bottom: 1px;
-    right: 1px;
+    /* position: absolute; */
+    bottom: 0px;
+    right: 0px;
 }
 
 .posittion-bottom-left {
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
 }
@@ -122,17 +131,24 @@ h1 {
     border-radius: 50px;
 
     padding: 50px;
-    min-height: 100vh;
+    height: 100%;
+    /* height: 100vh; */
 }
 
 .application-title {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+}
+
+.acccent-text {
+    font-weight: 700;
+    color: var(--text-red);
+    padding-bottom: 20px;
 }
 
 .add-case {
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 
     gap: 20px;
 }
