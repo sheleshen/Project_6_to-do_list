@@ -1,0 +1,147 @@
+/* Общие */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    /* MAIN */
+    --main-pink: #EB9898;
+    --main-yellow:#E9BE50;
+    --main-blue: #CFDDE6;
+
+    /* BG */
+    --bg-opacity: rgba(250, 250, 250, 0.5);
+
+    /* BUTTON */
+    --btn-bg: #EB9898;
+    --btn-bg-h: #CB6969;
+    --btn-bg-cl: #CB6969;
+    --btn-txt: #FFFFFF;
+
+    /* INPUT */
+    --input-bg: #FCFCFC;
+    --input-stroke: #EB9898;
+
+    /* TEXT */
+    --text: #000000;
+    --text-red: #EB5757;
+}
+
+
+/* ТЕКСТ И ССЫЛКИ */
+
+a, p, ul, li, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    color: var(--text);
+}
+
+/*  BTN КНОПКИ */
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--btn-bg);
+    border: none;
+    border-radius: 10px;
+    color: var(--btn-txt);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    padding: 15px 32px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--btn-bg-h);
+    color: var(--btn-txt);
+    transition: all 300ms linear;
+}
+
+.btn:active {
+    background-color: var(--btn-bg-cl);
+    color: var(--btn-txt);
+    transition: all 300ms linear;
+}
+
+/* ЗАГОЛОВКИ */
+
+h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 120%;
+    color: var(--text-black);
+    text-transform: none;
+    text-align: left;
+}
+
+/*  */
+
+.screen {
+    background-color: #8c888d;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+/* .posittion-bg-image {
+    position: absolute;
+} */
+
+.posittion-top-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.posittion-bottom-right {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+}
+
+.posittion-bottom-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.application-screen {
+    background-color: var(--bg-opacity);
+    border-radius: 50px;
+
+    padding: 50px;
+    min-height: 100vh;
+}
+
+.application-title {
+    padding-bottom: 50px;
+}
+
+.add-case {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+
+    gap: 20px;
+}
+
+.application-input {
+    background: var(--input-bg);
+    border: 3px solid var(--input-stroke);
+    border-radius: 10px;
+    outline: none;
+    padding: 8px 20px;
+    min-width: 400px;
+}
