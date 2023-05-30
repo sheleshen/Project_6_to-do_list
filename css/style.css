@@ -35,25 +35,28 @@ html, body {
     --text-red: #EB5757;
 }
 
-
 /* ТЕКСТ И ССЫЛКИ */
 
 a, p, ol, li, h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-p, ol {
+p, li {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
     color: var(--text);
-    padding-bottom: 15px;
+}
+
+li {
+    padding-bottom: 10px;
 }
 
 ol {
     list-style-position: inside;
 }
+
 
 /*  BTN КНОПКИ */
 
@@ -79,7 +82,7 @@ ol {
 }
 
 .btn:active {
-    background-color: var(--btn-bg-cl);
+    background-color: var(--btn-bg);
     color: var(--btn-txt);
     transition: all 250ms linear;
 }
@@ -96,7 +99,7 @@ h1 {
     text-align: left;
 }
 
-/*  */
+/* СТИЛИ */
 
 .screen {
     /* height: 100vh; */
@@ -109,19 +112,16 @@ h1 {
 }
 
 .posittion-top-left{
-    /* position: absolute; */
     top: 0;
     left: 0;
 }
 
 .posittion-bottom-right {
-    /* position: absolute; */
     bottom: 0px;
     right: 0px;
 }
 
 .posittion-bottom-left {
-    /* position: absolute; */
     bottom: 0;
     left: 0;
 }
@@ -158,6 +158,7 @@ h1 {
     border: 3px solid var(--input-stroke);
     border-radius: 10px;
     outline: none;
+    font-size: 16px;
     padding: 8px 20px;
     min-width: 400px;
 }
